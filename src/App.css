@@ -1,0 +1,90 @@
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters button {
+  padding: 10px 20px;
+  background-color: #ff4d4d;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background-color: #ff1a1a;
+}
+
+.match-list {
+  list-style: none;
+  padding: 0;
+}
+
+.match-item {
+  background-color: #333;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.match-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -15px;
+}
+
+.match-header-score {
+  display: block;
+}
+
+.match-header button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  background-color: #009933;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.match-header button:hover {
+  background-color: #006622;
+}
+
+.match-details {
+  margin-top: 10px;
+  padding-left: 20px;
+  list-style: disc;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .filters {
+      flex-direction: column;
+      gap: 5px;
+  }
+
+  .match-header {
+      text-align: center;
+
+  }
+}
